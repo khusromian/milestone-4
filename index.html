@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Editable Resume</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="app">
+    <h1>Editable Resume</h1>
+    <h3>Personal information</h3>
+    <!-- Form to input data -->
+    <div id="form">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Enter your name">
+      </div>
+      
+      <div>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" placeholder="Enter your phone">
+      </div>
+      
+      <div>
+        <label for="email">Email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
+  
+      <div>
+        <label for="education">Education :</label>
+        <textarea id="education" placeholder="Enter your education " rows="3"></textarea>
+      </div>
+      
+      <div>
+        <label for="experience">Experience:</label>
+        <textarea id="experience" placeholder="Enter your experience " row="3"></textarea>
+      </div>
+
+      <div>
+        <label for="skills">Skills:</label>
+        <textarea id="skills" placeholder="Enter your skills " rows="3"></textarea>
+      </div>
+
+
+      <button onclick="generateResume()">Generate Resume</button>
+    </div>
+
+    <!-- Display the Editable Resume -->
+    <div id="resume" contenteditable="true" style="display: none;">
+      <header>
+        <h3 id="resume-name" contenteditable="true" ></h3>
+        <p id="resume-phone" contenteditable="true" ></p>
+        <p id="resume-email" contenteditable="true" ></p>
+      </header>
+      <section id="resume-education" contenteditable="true">
+        <h3>Education</h3>
+        <p id="resume-education-text" contenteditable="true"></p>
+      </section>
+      <section id="resume-experience" contenteditable="true">
+        <h3>Experience</h3>
+        <p id="resume-experience-text" contenteditable="true"></p>
+      </section>
+      <section id="resume-skills" contenteditable="true">
+        <h3>Skills</h3>
+        <p id="resume-skills-text" contenteditable="true"></p>
+      </section>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>

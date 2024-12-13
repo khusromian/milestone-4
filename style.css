@@ -1,0 +1,87 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f7f7;
+  margin: 0;
+  padding: 0;
+}
+
+#app {
+  width: 80%;
+  margin: 50px auto;
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+#form div {
+  margin-bottom: 10px;
+}
+
+label {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 8px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+/* Resume Styling */
+#resume {
+  margin-top: 30px;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  outline: none;
+}
+
+header h2 {
+  font-size: 28px;
+  color: #333;
+}
+
+header p {
+  font-size: 16px;
+  color: #777;
+}
+
+#resume-experience h3 {
+  font-size: 24px;
+  color: #333;
+}
+
+#resume-experience p {
+  font-size: 16px;
+  color: #555;
+}
